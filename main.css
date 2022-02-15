@@ -26,7 +26,7 @@
   padding: 0px 20px;
   font-size: 18px;
   font-weight: 600;
-  color: tomato;
+  color: cornflowerblue;
 }
 .menuList:hover {
   color: blueviolet;
@@ -197,4 +197,14 @@
   right: 10px;
   bottom: 10px;
   display: none;
+}
+
+/* footer */
+.footer {
+  margin-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+  background-color: cornflowerblue;
 }
