@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/683188f6d2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="main.css" />
+    <title>Accordion || Modal || Scroll To Top Practice</title>
+  </head>
+  <body>
+    <!-- header start  -->
+    <header>
+      <section class="header">
+        <div class="headerItems">
+          <div>Logo</div>
+          <div>
+            <ul class="menu">
+              <li class="menuList">Home</li>
+              <li class="menuList">Service</li>
+              <li class="menuList">Case Study</li>
+              <li class="menuList">About</li>
+              <li class="menuList">Contact</li>
+            </ul>
+          </div>
+          <div>
+            <button class="menuBtn modalOpen">Learn More</button>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- main start  -->
+    <main>
+      <!-- hero section  -->
+      <section class="heroSection">
+        <div class="heroContent">
+          <h2>Welcome To JS Learning Point</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+            facere quis excepturi expedita, consequuntur unde accusamus nemo
+            corporis debitis sunt, sed minima, doloribus adipisci perspiciatis?
+            Labore animi tempore ipsum nemo fuga magnam inventore sequi nostrum?
+            Quos alias odit fugit. Iusto quidem debitis veritatis nam.
+            Asperiores, deserunt eligendi quaerat, temporibus dicta, quis
+            provident explicabo saepe perferendis non aliquam voluptate vel
+            earum.
+          </p>
+          <button class="modalOpen">Let's Start</button>
+        </div>
+
+        <!-- modal start  -->
+        <div class="modalOverlay">
+          <div class="modalContent">
+            <h1>Are you sure, do you want to learn JavaScript???</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+              laboriosam, quibusdam, at eos deserunt et cum non commodi a
+              repellat doloremque ducimus voluptates voluptatem harum laudantium
+              alias sed praesentium! Sunt!
+            </p>
+
+            <div class="modalBtn">
+              <button class="modalDone">Done</button>
+              <button class="modalClose">Close</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- accordion section  -->
+      <section class="accordionSection">
+        <div class="accordion">
+          <div class="accordionTop">
+            <button class="accordionButton">Accordion 1</button>
+            <i class="fa-solid fa-arrow-right"></i>
+            <!-- <i class="fa-solid fa-arrow-down arrowRight"></i> -->
+          </div>
+          <div class="accordionContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit similique perferendis dicta quo accusamus id laborum
+              ut harum eveniet quam illo maiores officia iusto, sequi ab hic
+              corporis! Possimus alias aperiam praesentium deserunt ipsa
+              voluptatem consectetur quod nemo ex iste?
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordionTop">
+            <button class="accordionButton">Accordion 2</button>
+            <i class="fa-solid fa-arrow-right"></i>
+            <!-- <i class="fa-solid fa-arrow-down"></i> -->
+          </div>
+          <div class="accordionContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit similique perferendis dicta quo accusamus id laborum
+              ut harum eveniet quam illo maiores officia iusto, sequi ab hic
+              corporis! Possimus alias aperiam praesentium deserunt ipsa
+              voluptatem consectetur quod nemo ex iste?
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordionTop">
+            <button class="accordionButton">Accordion 3</button>
+            <i class="fa-solid fa-arrow-right"></i>
+            <!-- <i class="fa-solid fa-arrow-down"></i> -->
+          </div>
+          <div class="accordionContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit similique perferendis dicta quo accusamus id laborum
+              ut harum eveniet quam illo maiores officia iusto, sequi ab hic
+              corporis! Possimus alias aperiam praesentium deserunt ipsa
+              voluptatem consectetur quod nemo ex iste?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- scroll to top  -->
+      <section>
+        <div class="scrollToTop">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </section>
+    </main>
+
+    <!-- main  -->
+    <script src="./main.js"></script>
+  </body>
+</html>

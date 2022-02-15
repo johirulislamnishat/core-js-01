@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+}
+
+.header {
+  height: 64px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.headerItems {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  padding: 0px 8px;
+}
+.menuList {
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: tomato;
+}
+.menuList:hover {
+  color: blueviolet;
+}
+.menuBtn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 45px;
+  padding-left: 45px;
+  border: 0px;
+  border-radius: 50px;
+  background-color: yellow;
+  transition: ease-in 0.6s;
+}
+.menuBtn:hover {
+  border: 2px solid tomato;
+  color: tomato;
+  transition: ease-out 0.6s;
+  background-color: rgba(9, 255, 0, 0);
+}
+
+/* hero style  */
+.heroSection {
+  height: 600px;
+  width: 100%;
+  background-color: violet;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbhxT3BXm53Ky3ZaeS9-iA_HJK37jkYqnsPA&usqp=CAU");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  color: rgb(255, 255, 255);
+}
+.heroContent {
+  width: 60%;
+  margin: 0 auto;
+}
+.heroContent h2 {
+  font-size: 54px;
+}
+.heroContent p {
+  font-size: 18px;
+}
+.heroContent button {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 45px;
+  padding-left: 45px;
+  border: 0px;
+  border-radius: 50px;
+  background-color: yellow;
+  transition: ease-in 0.6s;
+}
+.heroContent button:hover {
+  border: 2px solid yellow;
+  color: white;
+  transition: ease-out 0.6s;
+  background-color: rgba(9, 255, 0, 0);
+}
+
+/* modal style  */
+.modalOverlay {
+  position: fixed;
+  background-color: rgba(25, 31, 12, 0.561);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+}
+.modalContent {
+  width: 50%;
+  margin: 0 auto;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 2px 0px rgba(63, 62, 62, 0.137);
+  transform: scale(0);
+  transition: ease-in 0.5s;
+}
+.modalOverlay.active {
+  visibility: visible;
+}
+.modalOverlay.active .modalContent {
+  visibility: visible;
+  transform: scale(1);
+}
+.modalBtn {
+  margin-top: 20px;
+}
+.modalDone {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 45px;
+  padding-left: 45px;
+  border: 0px;
+  border-radius: 50px;
+  background-color: tomato;
+}
+.modalClose {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 45px;
+  padding-left: 45px;
+  border: 0px;
+  border-radius: 50px;
+  background-color: tomato;
+}
+
+/* Accordion Style */
+.accordionSection {
+  margin-top: 100px;
+}
+.accordion {
+  width: 60%;
+  margin: 0 auto;
+}
+.accordionTop {
+  display: flex;
+  background-color: green;
+  border-radius: 5px;
+  padding: 8px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  color: white;
+  justify-content: space-between;
+}
+.accordionButton {
+  border: 0;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+.accordionContent {
+  background-color: rgba(228, 228, 228, 0.794);
+  border-radius: 5px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+.accordionContent p {
+  padding: 8px 10px;
+}
+.accordionContentActive {
+  background-color: yellowgreen;
+}
+.accordionContentActive .fa-arrow-right {
+  transform: rotate(90deg);
+  transition: 0.8s;
+}
+/* .accordionContent.accordionOpen {
+  visibility: visible;
+} */
+/* scroll to top */
+.scrollToTop {
+  position: fixed;
+  padding: 8px;
+  width: 12px;
+  border-radius: 50px;
+  background-color: green;
+  color: white;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+}
